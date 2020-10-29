@@ -1,0 +1,183 @@
+/* 
+font-family: 'Cookie', cursive;
+
+font-family: 'Raleway', sans-serif; 
+*/
+
+/* 
+
+MES COULEURS GÉNÉRIQUES
+
+*/
+
+:root{
+    --khaki : rgb(121, 117, 82);
+    --blanc : #fff;
+    --noir : #000;
+    --gris : #D2D2D2;
+
+}
+
+body {
+    background-color: var(--gris);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif; 
+}
+
+main {
+    width: 1020px;
+    background-color: var(--blanc);
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 6em;
+    line-height: 3em;
+    text-align: center;
+    color: var(--gris);
+    text-shadow: 2px 4px 6px #000;
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    background: url(../img/wallpaper2.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+/* 
+
+NAVIGATION
+
+*/
+
+nav {
+    height: 50px;
+    background-color: var(--beige);
+    line-height: 50px;
+    padding: 0;
+    margin: 0 0 20px 0;
+
+    /* permet de garder toujours la navigation en haut de la page */
+    position: sticky;
+    top: 0;
+}
+
+/* du style pour le niveau 1 de la navigation, les onglets principaux */
+nav .onglet {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 1px solid var(--khaki);
+    border-left: 1px solid var(--khaki);
+    border-bottom: 1px solid var(--khaki);
+}
+
+nav .onglet a {
+    text-decoration: none;
+    color: var(--khaki);
+}
+
+/* style lors du survol des onglets principaux  */
+nav .onglet:hover {
+    box-shadow: 0px 8px 16px 0px var(--khaki);
+}
+
+/* pour le menu déroulant / SANS SURVOLEMENT*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 35px;
+    background-color: var(--blanc);
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px var(--khaki);
+    text-transform: none;
+}
+
+/* pour le menu déroulant / AVEC SURVOLEMENT */
+.onglet:hover .dropdown-content {
+    display: block;
+}
+/* style sur le lien des onglets inférieurs / SANS SURVOLEMENT */
+.dropdown-content a {
+    color: var(--noir);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* style sur le lien des onglets inférieurs / AVEC SURVOLEMENT */
+.dropdown-content a:hover {
+    background: var(--beige-fonce);
+    font-weight: 700;
+}
+
+/* 
+
+CLASSE ROW ET COLONNES
+
+*/
+
+/* La classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Les colonnes*/
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+}
